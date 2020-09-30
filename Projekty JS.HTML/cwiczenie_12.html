@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>zmienne</title>
+<meta charset="UTF-8">
+<script>
+/*
+
+*/
+function oblicz()
+{
+var rok=document.getElementById("l1").value;
+var imie=prompt("podaj swoje imie");
+var nazwisko=prompt("podaj swoje nazwisko");
+var wiek = 2020-rok;
+if (wiek<18)
+alert("Witaj " +imie+" "+nazwisko+ " masz "+wiek+ " lat. jestes niepelnoletni");
+else{
+alert("Witaj " +imie+" "+nazwisko+ " masz "+wiek+ " lat. jestes pelnoletni");
+}
+}
+</script>
+</head>
+<body>
+rok urodzenia:<input type="text" id="l1"/><br>
+<input type="button" value="oblicz" onclick="oblicz()" />
+</body>
+
+</html>

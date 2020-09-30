@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>zmienne</title>
+<meta charset="UTF-8">
+<script>
+/*
+Utowrzyyc na stronie dwa pola tekstowe w skrypcie pobrac z nich 
+wartosci zamienic na liczby calkowite obliczyc cztery dzialania i wyswietlic wyniki w okienkach ALERT
+*/
+function oblicz()
+{
+var liczba1=document.getElementById("l1").value;
+var liczba2=document.getElementById("l2").value;
+alert(liczba1);
+alert(liczba2);
+if (isNaN(liczba1) || isNaN(liczba2))
+alert("wpisz poprawnie liczby");
+else{
+liczba1=parseInt(liczba1);
+liczba2=parseInt(liczba2);
+var s=liczba1+liczba2;
+var r=liczba1-liczba2;
+var iloczyn=liczba1*liczba2;
+alert("roznica liczb: "+liczba1+" i "+liczba2+" wynosci "+r);
+alert("iloczyn liczb: "+liczba1+" i "+liczba2+" wynosci "+iloczyn);
+alert("dodawanie liczb: "+liczba1+" i "+liczba2+" wynosci "+s);
+if (liczba2==0)
+alert("dzielenie przez zero")
+else{
+var iloraz=liczba1/liczba2;
+alert("iloraz liczb: "+liczba1+" i "+liczba2+" wynosci "+iloraz);
+}
+}
+}
+</script>
+</head>
+<body>
+Liczba 1:<input type="text" id="l1"/><br>
+Liczba 2:<input type="text" id="l2"/><br>
+<input type="button" value="oblicz" onclick="oblicz()" />
+</body>
+
+</html>
